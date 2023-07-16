@@ -1,0 +1,33 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/add-post.css">
+</head>
+<body>
+  <%- include('includes/nav.ejs')  %>
+   
+  
+  <form action="/add-post" method="POST" class="form">
+    <h1 class="form_header">Add your post</h1>
+  <div class="form_controll">
+    <label for="title">Title<span>(Max. 40 characters)</span></label>
+    <input type="text" id="title" name="title" maxlength="40"  required>
+  </div>
+    
+  <div class="form_controll">
+    <label for="imgUrl">imgUrl</label>
+    <input type="text" id="imgUrl" name="imgUrl" required>
+  </div>
+    
+    <div class="form_controll">
+      <label for="shortDesc">Short Description<span>(Max. 60 characters)</span></label>
+    <input id="shortDesc" name="shortDesc" maxlength="60" required>
+    </div>
+    
+    <div class="form_controll">
+      <label for="description">Description</label>
+    <textarea id="description" name="description" required></textarea>
+    </div >
+  <button type="submit" class="form_action">Submit</button>
+  </div>
+  </form>
+</body>
+</html>

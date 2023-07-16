@@ -1,0 +1,32 @@
+<%- include('includes/head.ejs') %>
+<link rel="stylesheet" href="/css/post-details.css">
+</head>
+<body>
+   <div class="post-details">
+   <%- include('includes/nav.ejs')  %>
+   <div class="detail_header">
+      <h1 ><%= post.title %></h1>
+   </div>
+   
+   <div class="img_div">
+  <img src="<%= post.imgUrl %>" class="detail_img"/>
+</div>
+  <p class="detail_description"><%= post.description %></p>
+</div>
+  
+   
+  <%- include('includes/comment.ejs')  %>
+   <div >
+  <% for (const comment of comments) { %>
+   <ul class="comments">
+      <li><p><%= comment.description %></p></li>
+   </ul>
+</div>
+
+   
+<% } %>
+  
+
+  
+</body>
+</html>
