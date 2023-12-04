@@ -4,9 +4,12 @@
 <body>
    <%- include('includes/nav.ejs')  %>
    <div class="list">
-      <h1 class="list_header">LATEST BLOGS</h1>
+      
       <% if(posts.length === 0) { %>
-      <h1 class="list_header">There are no blogs</h1>
+      <h1 class="list_header">Nema ponuda!</h1>
+      <% } %>
+      <% if(posts.length != 0) { %>
+      <h1 class="list_header">POSLJEDNJE DODANE PONUDE</h1>
       <% } %>
       <% for (const post of posts) { %>
          <ul class="list_list">

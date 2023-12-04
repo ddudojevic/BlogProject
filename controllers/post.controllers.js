@@ -16,9 +16,13 @@ exports.getAddPost = (req, res) => {
   res.render("add-post", { pageTitle: "Add your post" });
 };
 
+exports.getFirstPage = (req, res) => {
+  res.render("first-page", { pageTitle: "BabySitting" });
+};
+
 exports.postAddPost = (req, res) => {
-  const { id, title, imgUrl, shortDesc, description } = req.body;
-  const post = new Post(id, title, imgUrl, shortDesc, description);
+  const { id, title, email, imgUrl, kontaktBroj, description } = req.body;
+  const post = new Post(id, title, imgUrl, email, kontaktBroj, description);
   post.save();
   res.redirect("/");
 };

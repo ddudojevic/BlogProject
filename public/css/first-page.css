@@ -1,0 +1,32 @@
+.firstPage {
+  display: flex;
+  flex-direction: row;
+  height: 80vh;
+  align-items: center;
+}
+span {
+  color: rgb(0, 89, 255);
+}
+.slogan {
+  flex: 1;
+  padding: 20px;
+  align-items: center;
+  font-size: 2rem;
+  justify-content: center;
+  padding-left: 15rem;
+
+}
+
+.pocetnaSlika {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 15rem;
+  margin-top: 2.5rem;
+}
+
+.pocetnaSlika img {
+  max-width: 140%;
+  height: auto;
+}

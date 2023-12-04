@@ -1,6 +1,6 @@
 .form {
   margin: auto;
-  max-width: 480px;
+  max-width: 480px; 
   height: 80vh;
   display: flex;
   flex-direction: column;
@@ -12,19 +12,20 @@
 
 .form_header {
   display: flex;
-  border-bottom: 1px solid rgb(0, 89, 255);
   justify-content: center;
   align-items: center;
   padding-bottom: 1rem;
   margin-bottom: 1rem;
 }
 
-.form span{
+.headerSpan{
+  color: rgb(0, 89, 255);
+  margin-right: 0.5rem;
+}
+.maxCha{
     color: darkgray;
     font-size: 0.8rem;
 }
-
-
 
 .form_controll {
   display: flex;
@@ -40,18 +41,26 @@
 
 .form_controll input {
   background: transparent;
-  border: 1px solid rgb(0, 89, 255);
   border-radius: 3px;
   padding: 0.1rem 0.2rem;
+  border-color: rgb(0, 89, 255);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
+
 .form_controll textarea {
-  background: transparent;
-  border: 1px solid rgb(0, 89, 255);
   border-radius: 3px;
   padding-bottom: 5rem;
   resize: none;
   overflow: auto;
+  background: transparent;
+  border-radius: 3px;
+  border-color: rgb(0, 89, 255);
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
 }
 
 .form_action{

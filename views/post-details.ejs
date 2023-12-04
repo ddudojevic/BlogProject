@@ -7,26 +7,15 @@
    <div class="detail_header">
       <h1 ><%= post.title %></h1>
    </div>
-   
+ <div class="content">
+   <div class="description">
+      <p class="detail_description"><%= post.description %></p>
+    </div>
    <div class="img_div">
   <img src="<%= post.imgUrl %>" class="detail_img"/>
-</div>
-  <p class="detail_description"><%= post.description %></p>
-</div>
-  
-   
-  <%- include('includes/comment.ejs')  %>
-   <div >
-  <% for (const comment of comments) { %>
-   <ul class="comments">
-      <li><p><%= comment.description %></p></li>
-   </ul>
-</div>
+</div>  
 
-   
-<% } %>
-  
-
-  
+</div>  
+    
 </body>
 </html>

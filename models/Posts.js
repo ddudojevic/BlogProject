@@ -14,12 +14,13 @@ const getPostsFromFile = (cb) => {
 };
 
 module.exports = class Posts {
-  constructor(id, title, imgUrl, shortDesc, description) {
+  constructor(id, title, imgUrl, email, kontaktBroj, description) {
     this.id = v4();
     this.title = title;
     this.imgUrl = imgUrl;
-    this.shortDesc = shortDesc;
     this.description = description;
+    this.email = email;
+    this.kontaktBroj = kontaktBroj
   }
 
   save() {

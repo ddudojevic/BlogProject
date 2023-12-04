@@ -6,27 +6,32 @@
    
   
   <form action="/add-post" method="POST" class="form">
-    <h1 class="form_header">Add your post</h1>
+    <h1 class="form_header"><span class="headerSpan">DODAJ</span> PONUDU</h1>
   <div class="form_controll">
-    <label for="title">Title<span>(Max. 40 characters)</span></label>
+    <label for="title">Ime i prezime<span class="maxCha">(Max. 40 characters)</span></label>
     <input type="text" id="title" name="title" maxlength="40"  required>
   </div>
     
   <div class="form_controll">
-    <label for="imgUrl">imgUrl</label>
+    <label for="imgUrl">URL slike</label>
     <input type="text" id="imgUrl" name="imgUrl" required>
   </div>
+
+  <div class="form_controll">
+    <label for="email">Email<span class="maxCha">(Max. 30 characters)</span></label>
+  <input id="email" name="email" maxlength="30" required>
+  </div>
+
+  <div class="form_controll">
+    <label for="kontaktBroj">Kontakt broj<span class="maxCha">(Max. 9 characters)</span></label>
+  <input id="text" name="kontaktBroj" maxlength="9" required>
+  </div>
     
-    <div class="form_controll">
-      <label for="shortDesc">Short Description<span>(Max. 60 characters)</span></label>
-    <input id="shortDesc" name="shortDesc" maxlength="60" required>
-    </div>
-    
-    <div class="form_controll">
-      <label for="description">Description</label>
+  <div class="form_controll">
+      <label for="description">Biografija</label>
     <textarea id="description" name="description" required></textarea>
     </div >
-  <button type="submit" class="form_action">Submit</button>
+  <button type="submit" class="form_action">Potvrdi</button>
   </div>
   </form>
 </body>
